@@ -1,0 +1,278 @@
+html, body, main, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #ED5B60;
+}
+
+a:hover {
+  color: #F1A031;
+}
+
+/*NAVBAR*/
+#nav {
+  padding-bottom: 10px;
+  position: fixed;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100%;
+  z-index: 2;
+  font-size: 18px;
+  background-image: linear-gradient(260deg, #2A85BC 0%, #044059 100%);
+}
+
+#main-nav {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#main-nav li {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.nav-links,
+#logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#logo:hover,
+.nav-links:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+#logo {
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+#navbar-toggle:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.icon {
+  display: none;
+}
+
+/*SECTIONS*/
+.content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  justify-content: space-around;
+  padding: 3vh 1vw;
+}
+
+.sectionHeader {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.sectionTitle {
+  text-align: center;
+  align-self: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+/*SECTION HEADERS*/
+#resumeHeader {
+  background-image: url("../img/code.jpg");
+}
+
+#researchHeader {
+  background-image: url("../img/code.jpg");
+}
+
+#journalHeader {
+  background-image: url("../img/code.jpg");
+}
+
+#slidesHeader {
+  background-image: url("../img/code.jpg");
+}
+
+#attendanceHeader {
+  background-image: url("../img/code.jpg");
+}
+
+/*HERO SECTION*/
+#hero {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/notebook.jpg");
+  background-size: cover;
+}
+
+#nameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  margin: 0 auto;
+  font-size: 2em;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 0 2vw;
+}
+
+/*STATEMENT AND INTENT SECTION*/
+.split-container {
+  flex-direction: row;
+  display: flex;
+}
+
+.split-item {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding: 3em 5em 3em 5em;
+}
+
+.right {
+   order: -1;
+}
+
+.left {
+  color: white;
+  background-color: #044059;
+}
+
+/*RESUME SECTION*/
+#resume {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.resumeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10vh;
+  width: 100%;
+}
+
+.resumeGrid .resumeCol {
+  width: 32%;
+  text-align: center;
+}
+
+.resumeIcon {
+  font-size: 3em;
+  margin-bottom: 2vh;
+}
+
+/*RESEARCH SECTION*/
+#research {
+  justify-content: space-between;
+  background-color: #044059;
+}
+
+blockquote{
+  font-size: 1em;
+  width: 50%;
+  font-style:italic;
+  color: #242423;
+  padding-left: 4em;
+  padding-top: 2vh;
+  padding-right: 2em;
+  margin: 0;
+  border-left: 8px solid #ED5B60 ;
+  line-height: 1.6;
+  position: relative;
+  background:#BBBBBC;
+}
+
+blockquote::before{
+  content: "\201C";
+  color: #ED5B60;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+.sectionImg {
+  width: 35%;
+  height: auto;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#researchImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*INTERNSHIP JOURNAL SECTION*/
+#journalImg {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*SLIDES SECTIONS*/
+#link {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em
+}
